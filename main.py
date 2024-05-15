@@ -17,7 +17,7 @@ import shutil
 logging.getLogger("discord.http").disabled = True
 logging.getLogger("discord.client").disabled = True
 logging.getLogger("discord.gateway").disabled = True
-os.system("title Five-Nuker")
+os.system("clear")
 
 def stop_nuker():
     if os.name == "nt":
@@ -32,9 +32,9 @@ def clear():
 
 
 def start_update():
-    Center("Running the nuker update...")
+    Center("Patlatma güncellemesini çalıştırıyor...")
 
-    urllib.request.urlretrieve("https://github.com/glitch65/Five-nuker/raw/Rework/updater.zip", "updater.zip")
+    urllib.request.urlretrieve("https://github.com/FerSReD98/fersred-nuker/raw/Rework/updater.zip", "updater.zip")
     
     with zipfile.ZipFile("updater.zip", "r") as updater:
         updater.extractall()
@@ -49,43 +49,44 @@ if os.path.exists("updated"):
     os.remove("updated")
     clear()
 
-
 local_version = str("0.1.1")
 
 http = urllib3.PoolManager()
 
-get_last_ver = http.request('GET', 'https://raw.githubusercontent.com/glitch65/Five-nuker/ver_reborn/curent_version')
-
-get_last_ver = get_last_ver.data.decode('utf-8')
-
-if not local_version == get_last_ver:
-    Center("New version of Five-nuker avaible!")
-    Center(f"{local_version} -> {get_last_ver}")
-    if os.name == "nt":
-        start_update()
-    else:
-        Center("Opening a page with download and with a changelog after a few seconds...")
-        sleep(3)
-        webbrowser.open("https://github.com/glitch65/Five-nuker/releases")
-
-
-
-
-
-raw_image = """  █████▒██▓ ██▒   █▓▓█████     ███▄    █  █    ██  ██ ▄█▀▓█████  ██▀███  
-▓██   ▒▓██▒▓██░   █▒▓█   ▀     ██ ▀█   █  ██  ▓██▒ ██▄█▒ ▓█   ▀ ▓██ ▒ ██▒
-▒████ ░▒██▒ ▓██  █▒░▒███      ▓██  ▀█ ██▒▓██  ▒██░▓███▄░ ▒███   ▓██ ░▄█ ▒
-░▓█▒  ░░██░  ▒██ █░░▒▓█  ▄    ▓██▒  ▐▌██▒▓▓█  ░██░▓██ █▄ ▒▓█  ▄ ▒██▀▀█▄  
-░▒█░   ░██░   ▒▀█░  ░▒████▒   ▒██░   ▓██░▒▒█████▓ ▒██▒ █▄░▒████▒░██▓ ▒██▒
- ▒ ░   ░▓     ░ ▐░  ░░ ▒░ ░   ░ ▒░   ▒ ▒ ░▒▓▒ ▒ ▒ ▒ ▒▒ ▓▒░░ ▒░ ░░ ▒▓ ░▒▓░
- ░      ▒ ░   ░ ░░   ░ ░  ░   ░ ░░   ░ ▒░░░▒░ ░ ░ ░ ░▒ ▒░ ░ ░  ░  ░▒ ░ ▒░
- ░ ░    ▒ ░     ░░     ░         ░   ░ ░  ░░░ ░ ░ ░ ░░ ░    ░     ░░   ░ 
-        ░        ░     ░  ░            ░    ░     ░  ░      ░  ░   ░     
-                ░                                                        """
+raw_image = """
+ ███████ ███████ ██████  ███████ ██████  ███████ ██████  
+██      ██      ██   ██ ██      ██   ██ ██      ██   ██ 
+█████   █████   ██████  ███████ ██████  █████   ██   ██ 
+██      ██      ██   ██      ██ ██   ██ ██      ██   ██ 
+██      ███████ ██   ██ ███████ ██   ██ ███████ ██████ 
+                                                             
+                                                             
+███    ██ ██    ██ ██   ██ ███████ ██████  
+████   ██ ██    ██ ██  ██  ██      ██   ██ 
+██ ██  ██ ██    ██ █████   █████   ██████  
+██  ██ ██ ██    ██ ██  ██  ██      ██   ██ 
+██   ████  ██████  ██   ██ ███████ ██   ██ 
+                                                       
+                
+                             Github : https://github.com/FerSReD98                                                   
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+C O D E D   B Y   F E R S R E D 9 8
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+F E R S R E D    N U K E R 
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
++-+-+-+-+-+-+-+-+-+-+-+
++-+-+-+-+-+-+-+
++-+-+-+-+-+
++-+-+
++
+""" 
 raw_image1 =f"""
 \n\n\n{raw_image}\n\n\n"""
 
-CenterColor(raw_image1,((125,0,255),(0,0,0)), len(raw_image.split("\n")),"V")
+CenterColor(raw_image1,((255,0,0),(255,255,0)), len(raw_image.split("\n")),"V")
 
 if not os.path.exists("cfg"):
     os.mkdir("cfg")
@@ -95,30 +96,30 @@ if not os.path.exists("cfg"):
             "prefix": "!",
             "nuke_prefix": ".",
             "names_of_channels_and_roles": ["Paste here your channel names"],
-            "name_of_webhooks": "Five Nuker",
-            "spam_text": "Paste here your spam text",
+            "name_of_webhooks": "FerSReD Nuker",
+            "spam_text": "FerSReD Official Siker İzi Kalır",
             "spam_mode": 1,
             "channels_create_count": 10,
             "spam_in_channel_count": 10,
-            "server_name": "Nuked by Five Nuker",
-            "whitelisted_ids": [1207760690899849350, 743781026534260836],
+            "server_name": "FerSReD Nuker Tarafından Patlatıldı",
+            "whitelisted_ids": [],
             "only_whitelisted_users_can_perform_actions": False,
             "ban_reason": "XDDDDDDDDDDDDDDDDDDDDDDDD",
             "invisible_mode": False,
             "Enable_activity": True,
             "Activity_type": "playing",
-            "Activity_name": "Five Nuker on TOP!"
+            "Activity_name": "FerSReD Official ❤️"
         }
         json.dump(config,cfg,indent=3)
-    print(f"{F.YELLOW}cfg/config.json not exists, created a config file!\nPlease check and edit a cfg/config.json!{F.RESET}")
+    print(f"{F.YELLOW}cfg/config.json mevcut değil, bir config dosyası oluşturuldu!\nLütfen cfg/config.json'u kontrol edin ve düzenleyin!{F.RESET}")
     stop_nuker()
 if os.path.exists("cfg/config.json"):
     try:
         with open("cfg/config.json", "r") as cfg:
             config = json.loads(cfg.read())
-        print(f"{F.GREEN}Config file loaded!{F.RESET}")
+        print(f"{F.GREEN}Config dosyası yüklendi!{F.RESET}")
     except Exception as e:
-        print("failed to load the config :(")
+        print("Config yüklenemedi :(")
         print(f"{e}")
 else:
     with open("cfg/config.json", "w") as cfg:
@@ -127,21 +128,21 @@ else:
             "prefix": "!",
             "nuke_prefix": ".",
             "names_of_channels_and_roles": ["Paste here your channel names"],
-            "name_of_webhooks": "Five Nuker",
-            "spam_text": "Paste here your spam text",
+            "name_of_webhooks": "FerSReD Nuker",
+            "spam_text": "FerSReD Official Siker İzi Kalır",
             "spam_mode": 1,
             "channels_create_count": 10,
             "spam_in_channel_count": 10,
-            "server_name": "Nuked by Five Nuker",
+            "server_name": "FerSReD Nuker Tarafından Patlatıldı",
             "whitelisted_ids": [1207760690899849350, 743781026534260836],
             "only_whitelisted_users_can_perform_actions": False,
             "ban_reason": "XDDDDDDDDDDDDDDDDDDDDDDDD",
             "invisible_mode": False,
             "Activity_type": "playing",
-            "Activity_name": "Five Nuker on TOP!"
+            "Activity_name": "FerSReD Official ❤️"
         }
         json.dump(config,cfg,indent=3)
-    print(f"{F.YELLOW}cfg/config.json not exists, created a config file!\nPlease check and edit a cfg/config.json!{F.RESET}")
+    print(f"{F.YELLOW}cfg/config.json mevcut değil, bir config dosyası oluşturuldu!\nLütfen cfg/config.json'u kontrol edin ve düzenleyin!{F.RESET}")
     stop_nuker()
 
 with open('icon.png', 'rb') as f:
@@ -154,10 +155,9 @@ bot = commands.Bot(config['prefix'],intents=discord.Intents.all(),help_command=N
 @bot.event
 async def on_ready():
     clear()
-    os.system("cls")
-    os.system(f"title Five Nuker - Online - {bot.user} - ")
-    CenterColor(raw_image1,((125,0,255),(0,0,0)), len(raw_image.split("\n")),"V")
-    CenterColor(f"You loggen by {bot.user}",((7,227,0),(7,145,3),(6,214,0),(5,138,1),(5,102,2),(4,117,2),(4,92,2)), len(f"You loggen by {bot.user}"),"H")
+    len(f"FerSReD Nuker - Çevrimiçi - {bot.user} - ")
+    CenterColor(raw_image1,((225,0,0),(255,255,0)), len(raw_image.split("\n")),"V")
+    CenterColor(f"{bot.user} Giriş Başarılı",((255,0,0),(255,155,0),(255,155,0),(255,55,0)), len(f"{bot.user} Giriş Başarılı"),"H")
     
     if config["Activity_type"] == "playing" and config["invisible_mode"] == False:
         await bot.change_presence(activity=discord.Game(name=config["Activity_name"]))
@@ -169,11 +169,11 @@ async def on_ready():
         await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=config["Activity_name"]))
     elif config["Activity_type"] == None and config["invisible_mode"] == True:
         await bot.change_presence(status=discord.Status.offline)
-        CenterColor("Invisible mode enabled!",((163,163,163),(133,133,133),(99,99,99)), 21,"H")   
+        CenterColor("Görünmez mod etkin!",((163,163,163),(133,133,133),(99,99,99)), 21,"H")   
     else:
-        CenterColor("ERROR!!! Activity_type must be playing, listening, streaming, watching or null. invisible_mode must be true or false. The bot's activity will not change and invisible mode will not be enabled",((255,0,0),(176,0,0)),len("ERROR!!! Activity_type must be playing, listening, streaming, watching or null. invisible_mode must be true or false. The bot's activity will not change and invisible mode will not be enabled"),"H")
+        CenterColor("HATA!! Activity_type oynuyor, dinliyor, yayınlıyor, izliyor veya boş olmalıdır. invisible_mode doğru veya yanlış olmalıdır. Botun etkinliği değişmeyecek ve görünmez mod etkinleştirilmeyecek",((255,0,0),(176,0,0)),len("HATA!!! Activity_type oynuyor, dinliyor, yayınlıyor, izliyor veya boş olmalıdır. invisible_mode doğru veya yanlış olmalıdır. Botun etkinliği değişmeyecek ve görünmez mod etkinleştirilmeyecek"),"H")
 
-    Center(f"Message logs:")  
+    Center(f"Mesaj Logları:")  
 
 
 
@@ -231,13 +231,13 @@ async def on_message(message: discord.Message):
     if msg.startswith(config["nuke_prefix"]):
         CenterColor(f"[{message.author}]:{msg}",((0,255,0),(0,125,0),(0,255,0)), len(f"[{message.author}]: {msg}"),"H")
         args = msg.split()
-        if args[0] == config['nuke_prefix']+"nuke":
+        if args[0] == config['nuke_prefix']+"patlat":
             if config['only_whitelisted_users_can_perform_actions'] == True:
                 if message.author.id in config['whitelisted_ids']:
                     await message.guild.edit(name=config["server_name"], icon=icon)
                     spamCount = config['spam_in_channel_count']
                     channelsCreate = config['channels_create_count']
-                    CenterColor(f"Nuking a {message.guild.name}!\nSettings | SMPC (Spam Message Per Channel): {channelsCreate} | Channels Count: {spamCount}",((255,0,0),(255,0,0)), 1,"H")
+                    CenterColor(f"Patlatılıyor: {message.guild.name}\nAyarlar | KBSM (Kanal Başına Spam Mesajı): {channelsCreate} | Kanal Sayısı: {spamCount}",((255,0,0),(255,0,0)), 1,"H")
                     create_task(delete_channels(message.guild,))
                     create_task(delete_roles(message.guild,))
                     for i in range(channelsCreate):
@@ -247,7 +247,7 @@ async def on_message(message: discord.Message):
                 await message.guild.edit(name=config["server_name"], icon=icon)
                 spamCount = config['spam_in_channel_count']
                 channelsCreate = config['channels_create_count']
-                CenterColor(f"Nuking a {message.guild.name}!\nSettings | SMPC (Spam Message Per Channel): {channelsCreate} | Channels Count: {spamCount}",((255,0,0),(255,0,0)), 1,"H")
+                CenterColor(f"Patlatılıyor: {message.guild.name}\nAyarlar | KBSM (Kanal Başına Spam Mesajı): {channelsCreate} | Kanal Sayısı: {spamCount}",((255,0,0),(255,0,0)), 1,"H")
                 create_task(delete_channels(message.guild,))
                 create_task(delete_roles(message.guild,))
                 for i in range(channelsCreate):
@@ -264,8 +264,8 @@ async def on_message(message: discord.Message):
 
 try: bot.run(config['token'])
 except Exception as e:
-    gradientText(((255,0,0),(255,0,0)),1,f"[ERROR] Token incorrect! Please send your error message to our support!\n\nError message: {e}","H")
+    gradientText(((255,0,0),(255,0,0)),1,f"[Hata] Token yanlış veya girilmedi !!","H")
     sleep(3)
-    webbrowser.open("https://discord.gg/QTDXqt8PA8")
+    webbrowser.open("https://discord.gg/fersredofficial")
     stop_nuker()
 
