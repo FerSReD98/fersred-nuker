@@ -50,4 +50,4 @@ def gradientText(colors,steps,text,type):
     elif type == "H":
         print(Colorate.Horizontal(gradient, text, 1))
     else:
-        print(Colorate.Vertical(gradient, "Incorrect type, Type can be V - Vertical & H - Horizontal", 1))
+        print(Colorate.Vertical(gradient, "Yanlış tip, Tip V - Dikey ve H - Yatay olabilir", 1))
