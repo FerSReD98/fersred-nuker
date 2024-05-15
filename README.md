@@ -1,4 +1,4 @@
-# FerSReD Nuker | [Buradan] indirin(https://github.com/FerSReD98/fersred-nuker/raw/Rework/release.zip)
+# FerSReD Nuker
 
 ❓ # Herhangi bir sorunuz veya sorununuz mu var? Discord sunucusu için bizimle iletişime geçin veya bir sorun oluşturun
 > Discord: https://discord.gg/fersredofficial
