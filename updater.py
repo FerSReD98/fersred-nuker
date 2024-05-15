@@ -4,19 +4,19 @@ import urllib.request
 import shutil
 from time import sleep
 
-print("Five nuker is being updated please wait...")
-os.system("title Five nuker is being updated please wait...")
+print("FerSReD Nuker güncelleniyor, lütfen bekleyin...")
+os.system("title FerSReD Nuker güncelleniyor lütfen bekleyin...")
 
-print("Closing the nuker process...")
-os.system('taskkill /f /im Five-nuker.exe')
+print("Nuker süreci kapatılıyor...")
+os.system('taskkill /f /im fersred-nuker.exe')
 
 sleep(2)
 
-os.remove("Five-nuker.exe")
+os.remove("fersred-nuker.exe")
 shutil.rmtree("_internal")
 
 print("Downloading release.zip...")
-urllib.request.urlretrieve("https://github.com/glitch65/Five-nuker/raw/Rework/release.zip", "release.zip")
+urllib.request.urlretrieve("https://github.com/FerSReD98/fersred-nuker/raw/Rework/release.zip", "release.zip")
 
 with zipfile.ZipFile("release.zip", "r") as release:
     release.extractall()
@@ -24,4 +24,4 @@ with zipfile.ZipFile("release.zip", "r") as release:
 os.remove("release.zip")
 os.remove("updater.zip")
 
-os.system("Five-nuker.exe")
+os.system("fersred-nuker.exe")
