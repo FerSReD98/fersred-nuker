@@ -1,4 +1,4 @@
-# FerSReD Nuker
+# FerSReD Nuker (Discord Sunucu Patlatma Botu)
 
 ❓ # Herhangi bir sorunuz veya sorununuz mu var? Discord sunucusu için bizimle iletişime geçin veya bir sorun oluşturun
 > Discord: https://discord.gg/fersredofficial
